@@ -9,6 +9,9 @@ Bu proje, CODESYS V3 ortamında Ladder Logic (LD) dili kullanılarak geliştiril
 - Güvenli Mühürleme & Otomatik Sıfırlama: Yaya isteği sanal bir röle (`yaya_istek`) ile hafızaya alınır, kilitlenme tamamlandığında PLC'nin *Scan Cycle* avantajı kullanılarak milisaniyeler içinde mühür otomatik bozulur.
 - Çift Bobin (Double Coiling) Koruması: PLC mantığına aykırı olan çift bobin kullanımını engellemek amacıyla şartlar sanal rölelerle (flag) ayrıştırılmış ve tek çıkış üzerinden sürülmüştür.
 - HMI Visualisation: Sistem, kullanıcı arayüzü üzerinden anlık olarak izlenebilir ve butonlar vasıtasıyla kontrol edilebilir.
+- İsteyenler için,Projedeki sarı ışığın spesifik zaman aralıklarında (5-7. ve 12-14. saniyeler arası) yanması için standart zamanlayıcılar yerine özel bir Fonksiyon Bloğu (FB) tasarlanmıştır.
+
+Ana Ladder (LD) diyagramındaki karşılaştırma (GE/LE) kalabalığını önlemek, kodun okunabilirliğini ve modülerliğini artırmak amacıyla arka plan mantığı Structured Text (ST) dili ile yazılmıştır.
 
 ---
 
